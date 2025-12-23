@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clock.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\Clock.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
+              "RelativeToolTip": "Selection_Sort\\Clock.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:44:56.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\DataHandler.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
+              "RelativeToolTip": "Selection_Sort\\DataHandler.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAgwHsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:14:35.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\Program.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs*",
+              "RelativeToolTip": "Selection_Sort\\Program.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:11:24.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
