@@ -12,3 +12,4 @@ C:\Škola\3. Ročník\Al\Algoritmy\Algorithms\Selection sort\Selection_Sort\Sele
 C:\Škola\3. Ročník\Al\Algoritmy\Algorithms\Selection sort\Selection_Sort\Selection_Sort\obj\Debug\net8.0\Selection_Sort.pdb
 C:\Škola\3. Ročník\Al\Algoritmy\Algorithms\Selection sort\Selection_Sort\Selection_Sort\obj\Debug\net8.0\Selection_Sort.genruntimeconfig.cache
 C:\Škola\3. Ročník\Al\Algoritmy\Algorithms\Selection sort\Selection_Sort\Selection_Sort\obj\Debug\net8.0\ref\Selection_Sort.dll
+C:\Škola\3. Ročník\Al\Algoritmy\Algorithms\Selection sort\Selection_Sort\Selection_Sort\obj\Debug\net8.0\Selection_Sort.sourcelink.json

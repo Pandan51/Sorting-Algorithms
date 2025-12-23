@@ -17,7 +17,7 @@ namespace Selection_Sort
         {
             aTimer = new System.Timers.Timer(intervalMS);
             aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-            timeSec = 0;
+            timeSec = 4000;
         }
 
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -30,9 +30,13 @@ namespace Selection_Sort
             int hours = timeSec / 3600;
             int minutes = (timeSec - hours*3600) / 60;
             int seconds = timeSec % 60;
-
+            Console.WriteLine($"HH:MM  SSSS");
             Console.WriteLine($"{hours}:{minutes}  {seconds}");
-            Console.WriteLine($"{hours*3600}:{minutes*60}  {seconds}");
+            //Console.WriteLine($"{hours*3600}:{minutes*60}  {seconds}");
+        }
+        public int GetTime()
+        {
+            return timeSec;
         }
         public void ResetTimer()
         {

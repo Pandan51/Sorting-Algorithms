@@ -6,16 +6,21 @@ namespace Selection_Sort
     {
         static void Main(string[] args)
         {
-            DataHandler<int> numHandler = new DataHandler<int>();
+            // Type of handler
+            //DataHandler<int> numHandler = new DataHandler<int>();
             DataHandler<string> wordHandler = new DataHandler<string>();
-            string filename = "number_200.txt";
-            numHandler.ParseData(filename);
+
+            // Filename of dataset
+            string filename = "word_20.txt";
+            // Parse Data
+            wordHandler.ParseData(filename);
+            // Timer
             Clock clock = new Clock();
+            Console.WriteLine(clock.GetTime());
 
             //dataHandler.DisplayData();
 
-
-            int[] data = numHandler.GetData();
+            string[] data = wordHandler.GetData();
 
             //Selection sort
             int lowestNumIndex;
@@ -23,25 +28,57 @@ namespace Selection_Sort
             for (int swapIndex = 0; swapIndex < data.Length; swapIndex++)
             {
                 lowestNumIndex = swapIndex;
-                for(int comparedIndex = swapIndex+1; comparedIndex < data.Length; comparedIndex++)
+                for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length; comparedIndex++)
                 {
-                    if (numHandler.NumIsBigger(data[comparedIndex],data[lowestNumIndex]))
+                    if (wordHandler.WordIsBigger(data[comparedIndex], data[lowestNumIndex]))
                     {
                         lowestNumIndex = comparedIndex;
                     }
                 }
                 if (swapIndex != lowestNumIndex)
                 {
-                    int temp = data[lowestNumIndex];
+                    string temp = data[lowestNumIndex];
                     data[lowestNumIndex] = data[swapIndex];
                     data[swapIndex] = temp;
                 }
                 //dataHandler.DisplayData(data);
             }
+
+            wordHandler.DisplayData(data);
             Console.WriteLine("\nTime:");
-            clock.StartClock();
-            numHandler.DisplayData(data);
             clock.ShowTime();
+            wordHandler.CalculateAccuracy(data);
+
+            //wordHandler.ParseData("word_20-94%.txt");
+            //wordHandler.CalculateAccuracy(wordHandler.GetData());
+
+            //int[] data = numHandler.GetData();
+
+            ////Selection sort
+            //int lowestNumIndex;
+            //clock.StartClock();
+            //for (int swapIndex = 0; swapIndex < data.Length; swapIndex++)
+            //{
+            //    lowestNumIndex = swapIndex;
+            //    for(int comparedIndex = swapIndex+1; comparedIndex < data.Length; comparedIndex++)
+            //    {
+            //        if (numHandler.NumIsBigger(data[comparedIndex],data[lowestNumIndex]))
+            //        {
+            //            lowestNumIndex = comparedIndex;
+            //        }
+            //    }
+            //    if (swapIndex != lowestNumIndex)
+            //    {
+            //        int temp = data[lowestNumIndex];
+            //        data[lowestNumIndex] = data[swapIndex];
+            //        data[swapIndex] = temp;
+            //    }
+            //    //dataHandler.DisplayData(data);
+            //}
+
+            //numHandler.DisplayData(data);
+            //Console.WriteLine("\nTime:");
+            //clock.ShowTime();
 
             //Console.WriteLine("Nums:");
             //Console.WriteLine(numHandler.NumIsBigger(5,5));

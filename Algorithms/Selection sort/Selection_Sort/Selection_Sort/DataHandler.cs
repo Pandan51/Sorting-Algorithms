@@ -121,13 +121,14 @@ namespace Selection_Sort
                 if (this.WordIsBigger(data[index], data[index+1]))
                 {
                     correctSortPoints++;
-                    Console.WriteLine("Word is bigger");
+                    //Console.WriteLine("Word is bigger");
                 }
             }
-            Console.WriteLine(correctSortPoints);
-            Console.WriteLine(data.Length);
-            accuracy = correctSortPoints / data.Length;
-            Console.WriteLine($"Accuracy of this data set is {accuracy} %");
+            //Console.WriteLine(correctSortPoints);
+            //Console.WriteLine(data.Length);
+            accuracy = correctSortPoints / (data.Length-2);
+            Console.WriteLine($"Accuracy of this data set is {accuracy * 100} %\n" +
+                $"{correctSortPoints}/{data.Length-2}  Sorted/All items");
         }
 
         public bool WordIsBigger(string word1, string word2)
