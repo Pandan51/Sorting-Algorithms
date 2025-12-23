@@ -11,29 +11,32 @@ namespace Selection_Sort
             DataHandler<string> wordHandler = new DataHandler<string>();
 
             // Filename of dataset
-            string filename = "word_20.txt";
+            string filename = "random_integers_10M.txt";
             // Parse Data
             wordHandler.ParseData(filename);
-            // Timer
-            Clock clock = new Clock();
+            // Timer - 1 hour
+            // (Interval v ms, doba trvání sortování v sekundách)
+            Clock clock = new Clock(1000,10);
             Console.WriteLine(clock.GetTime());
 
-            //dataHandler.DisplayData();
+            // dataHandler.DisplayData();
 
             string[] data = wordHandler.GetData();
 
-            //Selection sort
+            // Selection sort
             int lowestNumIndex;
+            // Timer
             clock.StartClock();
-            for (int swapIndex = 0; swapIndex < data.Length; swapIndex++)
+            for (int swapIndex = 0; swapIndex < data.Length && !clock.IsElapsed(); swapIndex++)
             {
                 lowestNumIndex = swapIndex;
-                for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length; comparedIndex++)
+                for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length && !clock.IsElapsed(); comparedIndex++)
                 {
                     if (wordHandler.WordIsBigger(data[comparedIndex], data[lowestNumIndex]))
                     {
                         lowestNumIndex = comparedIndex;
                     }
+                    
                 }
                 if (swapIndex != lowestNumIndex)
                 {
@@ -42,8 +45,12 @@ namespace Selection_Sort
                     data[swapIndex] = temp;
                 }
                 //dataHandler.DisplayData(data);
+                Console.Clear();
+                clock.ShowTime();
+                Console.WriteLine(clock.IsElapsed());
             }
 
+            Console.WriteLine("End of sorting");
             wordHandler.DisplayData(data);
             Console.WriteLine("\nTime:");
             clock.ShowTime();

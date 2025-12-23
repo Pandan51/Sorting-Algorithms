@@ -11,19 +11,26 @@ namespace Selection_Sort
     {
         System.Timers.Timer aTimer;
         private static int timeSec = 0;
+        private static bool timerElapsed;
+        private static int elapseTime;
 
 
-        public Clock(int intervalMS = 1000)
+        public Clock(int intervalMS = 1000, int timeGoal = 1)
         {
             aTimer = new System.Timers.Timer(intervalMS);
             aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-            timeSec = 4000;
+            timerElapsed = false;
+            elapseTime = timeGoal;
         }
 
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
         {
             //Console.WriteLine("Hello World!");
             timeSec++;
+            if(timeSec >= elapseTime)
+            {
+                timerElapsed = true;
+            }
         }
         public void ShowTime()
         {
@@ -49,6 +56,10 @@ namespace Selection_Sort
         public void StopClock()
         {
             aTimer.Enabled = false;
+        }
+        public bool IsElapsed()
+        {
+            return timerElapsed;
         }
     }
 }
