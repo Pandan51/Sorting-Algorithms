@@ -15,12 +15,12 @@ namespace Selection_Sort
         private static int elapseTime;
 
 
-        public Clock(int intervalMS = 1000, int timeGoal = 1)
+        public Clock(int intervalMS = 1000, int timeGoal = 1000)
         {
             aTimer = new System.Timers.Timer(intervalMS);
             aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
             timerElapsed = false;
-            elapseTime = timeGoal;
+            elapseTime = timeGoal/1000;
         }
 
         private static void OnTimedEvent(object source, ElapsedEventArgs e)

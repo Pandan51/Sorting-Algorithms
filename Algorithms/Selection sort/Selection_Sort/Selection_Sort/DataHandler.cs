@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace Selection_Sort
 {
-    internal class DataHandler<T>
+    public class DataHandler<T>
     {
         private T[] _data;
 
         public DataHandler()
         {
-
+            
         }
         public void DisplayData(T[]? data = null)
         {
             T[] temp = data != null ? data : _data;
-            if (_data != null)
+            if (temp != null)
             {
                 Console.WriteLine("Logging all data.:");
                 foreach (T item in temp)
@@ -116,8 +116,9 @@ namespace Selection_Sort
             double accuracy = 0;
 
             // Check if sorted
-            for(int index = 0; index < data.Length-2;index++)
+            for(int index = 0; index < data.Length-1;index++)
             {
+                Console.WriteLine(index+": Comparing "+ data[index] + "<" + data[index+1]);
                 if (this.WordIsBigger(data[index], data[index+1]))
                 {
                     correctSortPoints++;
@@ -126,9 +127,9 @@ namespace Selection_Sort
             }
             //Console.WriteLine(correctSortPoints);
             //Console.WriteLine(data.Length);
-            accuracy = correctSortPoints / (data.Length-2);
+            accuracy = correctSortPoints / (data.Length-1);
             Console.WriteLine($"Accuracy of this data set is {accuracy * 100} %\n" +
-                $"{correctSortPoints}/{data.Length-2}  Sorted/All items");
+                $"{correctSortPoints}/{data.Length-1}  Sorted/All items");
         }
 
         public bool WordIsBigger(string word1, string word2)

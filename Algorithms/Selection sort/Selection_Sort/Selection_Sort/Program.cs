@@ -11,50 +11,65 @@ namespace Selection_Sort
             DataHandler<string> wordHandler = new DataHandler<string>();
 
             // Filename of dataset
-            string filename = "random_integers_10M.txt";
+            string filename = "word_20.txt";
             // Parse Data
             wordHandler.ParseData(filename);
             // Timer - 1 hour
-            // (Interval v ms, doba trvání sortování v sekundách)
-            Clock clock = new Clock(1000,10);
+            // (Interval v ms, doba trvání sortování v ms)
+            Clock clock = new Clock(1000,10000);
             Console.WriteLine(clock.GetTime());
 
             // dataHandler.DisplayData();
 
-            string[] data = wordHandler.GetData();
+             
 
+
+
+            string[] data = wordHandler.GetData();
+            wordHandler.CalculateAccuracy(data);
+            Console.WriteLine("Press to start");
+            Console.ReadKey();
             // Selection sort
             int lowestNumIndex;
             // Timer
             clock.StartClock();
-            for (int swapIndex = 0; swapIndex < data.Length && !clock.IsElapsed(); swapIndex++)
-            {
-                lowestNumIndex = swapIndex;
-                for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length && !clock.IsElapsed(); comparedIndex++)
-                {
-                    if (wordHandler.WordIsBigger(data[comparedIndex], data[lowestNumIndex]))
-                    {
-                        lowestNumIndex = comparedIndex;
-                    }
+
+            data = Selection_Sort.SortWordSet(data, wordHandler, clock);
+
+            //for (int swapIndex = 0; swapIndex < data.Length && !clock.IsElapsed(); swapIndex++)
+            //{
+            //    lowestNumIndex = swapIndex;
+            //    for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length && !clock.IsElapsed(); comparedIndex++)
+            //    {
+            //        if (wordHandler.WordIsBigger(data[comparedIndex], data[lowestNumIndex]))
+            //        {
+            //            lowestNumIndex = comparedIndex;
+            //        }
                     
-                }
-                if (swapIndex != lowestNumIndex)
-                {
-                    string temp = data[lowestNumIndex];
-                    data[lowestNumIndex] = data[swapIndex];
-                    data[swapIndex] = temp;
-                }
-                //dataHandler.DisplayData(data);
-                Console.Clear();
-                clock.ShowTime();
-                Console.WriteLine(clock.IsElapsed());
-            }
+            //    }
+            //    if (swapIndex != lowestNumIndex)
+            //    {
+            //        string temp = data[lowestNumIndex];
+            //        data[lowestNumIndex] = data[swapIndex];
+            //        data[swapIndex] = temp;
+            //    }
+            //    //dataHandler.DisplayData(data);
+            //    Console.Clear();
+            //    clock.ShowTime();
+            //    Console.WriteLine(clock.IsElapsed());
+            //}
 
             Console.WriteLine("End of sorting");
-            wordHandler.DisplayData(data);
             Console.WriteLine("\nTime:");
             clock.ShowTime();
             wordHandler.CalculateAccuracy(data);
+            Console.WriteLine("Would you like to see the data? (yes)");
+            string input = Console.ReadLine();
+            if (input == "yes".ToLower())
+            {
+                wordHandler.DisplayData(data);
+            }
+
 
             //wordHandler.ParseData("word_20-94%.txt");
             //wordHandler.CalculateAccuracy(wordHandler.GetData());

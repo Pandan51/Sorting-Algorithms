@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\selection_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\selection_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Selection_Sort.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Selection_Sort.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\Selection_Sort.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Selection_Sort.cs",
+              "RelativeToolTip": "Selection_Sort\\Selection_Sort.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T11:17:54.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Clock.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Clock.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
               "RelativeToolTip": "Selection_Sort\\Clock.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwBYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T12:44:56.955Z",
               "EditorCaption": ""
@@ -49,20 +66,20 @@
               "RelativeDocumentMoniker": "Selection_Sort\\DataHandler.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
               "RelativeToolTip": "Selection_Sort\\DataHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwIIAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T10:14:35.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Program.cs",
-              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs*",
-              "RelativeToolTip": "Selection_Sort\\Program.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBEAAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs",
+              "RelativeToolTip": "Selection_Sort\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwCQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T10:11:24.234Z",
               "EditorCaption": ""
