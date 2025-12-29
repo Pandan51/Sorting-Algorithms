@@ -7,34 +7,28 @@ namespace Selection_Sort
         static void Main(string[] args)
         {
             // Type of handler
-            //DataHandler<int> numHandler = new DataHandler<int>();
-            DataHandler<string> wordHandler = new DataHandler<string>();
+            DataHandler<double> dataHandler = new DataHandler<double>();
+            //DataHandler<string> dataHandler = new DataHandler<string>();
 
             // Filename of dataset
             string filename = "word_20.txt";
             // Parse Data
-            wordHandler.ParseData(filename);
+            dataHandler.ParseData(filename);
             // Timer - 1 hour
             // (Interval v ms, doba trvání sortování v ms)
             Clock clock = new Clock(1000,10000);
             Console.WriteLine(clock.GetTime());
 
-            // dataHandler.DisplayData();
 
-             
-
-
-
-            string[] data = wordHandler.GetData();
-            wordHandler.CalculateAccuracy(data);
+            double[] data = dataHandler.GetData();
+            dataHandler.CalculateAccuracy(data);
             Console.WriteLine("Press to start");
             Console.ReadKey();
             // Selection sort
-            int lowestNumIndex;
             // Timer
             clock.StartClock();
 
-            data = Selection_Sort.SortWordSet(data, wordHandler, clock);
+            data = Selection_Sort.SortWordSet(data, dataHandler, clock);
 
             //for (int swapIndex = 0; swapIndex < data.Length && !clock.IsElapsed(); swapIndex++)
             //{
@@ -62,12 +56,12 @@ namespace Selection_Sort
             Console.WriteLine("End of sorting");
             Console.WriteLine("\nTime:");
             clock.ShowTime();
-            wordHandler.CalculateAccuracy(data);
+            dataHandler.CalculateAccuracy(data);
             Console.WriteLine("Would you like to see the data? (yes)");
             string input = Console.ReadLine();
             if (input == "yes".ToLower())
             {
-                wordHandler.DisplayData(data);
+                dataHandler.DisplayData(data);
             }
 
 

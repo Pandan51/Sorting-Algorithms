@@ -110,19 +110,41 @@ namespace Selection_Sort
 
         public void CalculateAccuracy(string[] data)
         {
+            if (data == null || data.Length <= 1)
+            {
+                Console.WriteLine("Not enough data to calculate accuracy.");
+                return;
+            }
+
             // Count if 2 elements are sorted correctly
             double correctSortPoints = 0;
             //Resulting accuracy in %
             double accuracy = 0;
 
-            // Check if sorted
-            for(int index = 0; index < data.Length-1;index++)
+            if (data is string[])
             {
-                Console.WriteLine(index+": Comparing "+ data[index] + "<" + data[index+1]);
-                if (this.WordIsBigger(data[index], data[index+1]))
+                // Check if sorted
+                for (int index = 0; index < data.Length - 1; index++)
                 {
-                    correctSortPoints++;
-                    //Console.WriteLine("Word is bigger");
+                    Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
+                    if (this.WordIsBigger(data[index], data[index + 1]))
+                    {
+                        correctSortPoints++;
+                        //Console.WriteLine("Word is bigger");
+                    }
+                }
+            }
+            else if (data is double[])
+            {
+                // Check if sorted
+                for (int index = 0; index < data.Length - 1; index++)
+                {
+                    Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
+                    if (this.NumIsBigger(data[index], data[index + 1]))
+                    {
+                        correctSortPoints++;
+                        //Console.WriteLine("Word is bigger");
+                    }
                 }
             }
             //Console.WriteLine(correctSortPoints);

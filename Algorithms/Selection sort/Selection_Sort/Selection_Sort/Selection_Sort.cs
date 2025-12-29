@@ -39,7 +39,7 @@ namespace Selection_Sort
             return data;
         }
 
-        public static double[] SortNumSet(double[] data, DataHandler<double> wordHandler, Clock clock)
+        public static double[] SortNumSet(double[] data, DataHandler<double> numHandler, Clock clock)
         {
             int lowestNumIndex;
 
@@ -48,7 +48,7 @@ namespace Selection_Sort
                 lowestNumIndex = swapIndex;
                 for (int comparedIndex = swapIndex + 1; comparedIndex < data.Length && !clock.IsElapsed(); comparedIndex++)
                 {
-                    if (wordHandler.NumIsBigger(data[comparedIndex], data[lowestNumIndex]))
+                    if (numHandler.NumIsBigger(data[comparedIndex], data[lowestNumIndex]))
                     {
                         lowestNumIndex = comparedIndex;
                     }
