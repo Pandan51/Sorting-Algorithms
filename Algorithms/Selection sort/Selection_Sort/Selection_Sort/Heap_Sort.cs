@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Xml.Linq;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static internal class Heap_Sort<T> where T : IComparable<T>
     {

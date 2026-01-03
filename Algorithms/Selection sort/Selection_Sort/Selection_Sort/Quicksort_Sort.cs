@@ -4,89 +4,90 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static internal class Quicksort_Sort<T> where T : IComparable<T>
     {
         // partition function
-        static int partition(T[] arr, int low, int high)
+        /// <summary>
+        /// Optimized QuickSort using Hoare Partitioning and Tail Recursion.
+        /// Specifically designed to handle 10M+ items and duplicate values.
+        /// </summary>
+        public static void quickSort(T[] arr, int low, int high, Clock clock)
         {
-            int mid = low + (high - low) / 2;
-            // choose the pivot
-
-            swap(arr, mid, high);
-
-            T pivot = arr[high];
-
-
-            // index of smaller element and indicates 
-            // the right position of pivot found so far
-            int i = low - 1;
-
-            // traverse arr[low..high] and move all smaller
-            // elements to the left side. Elements from low to 
-            // i are smaller after every iteration
-            for (int j = low; j <= high - 1; j++)
+            while (low < high && !clock.IsElapsed())
             {
-                if (arr[j].CompareTo(pivot) <= 0)
+                // Median-of-Three: Selects a better pivot and sorts low/mid/high
+                int p = PartitionHoare(arr, low, high);
+
+                // Update UI for large partitions
+                if ((high - low) > 100000)
                 {
-                    i++;
-                    swap(arr, i, j);
+                    // ProgressUI.Update(low, arr.Length, clock);
+                }
+
+                // Tail Recursion: Always recurse into the smaller side first
+                // to keep the stack depth at O(log n).
+                if (p - low < high - p)
+                {
+                    quickSort(arr, low, p, clock);
+                    low = p + 1;
+                }
+                else
+                {
+                    quickSort(arr, p + 1, high, clock);
+                    high = p;
                 }
             }
-
-            // move pivot after smaller elements and
-            // return its position
-            swap(arr, i + 1, high);
-            return i + 1;
         }
 
-        // swap function
-        static void swap(T[] arr, int i, int j)
+        /// <summary>
+        /// Hoare Partitioning is faster and more robust than Lomuto.
+        /// It handles duplicate values much more efficiently.
+        /// </summary>
+        private static int PartitionHoare(T[] arr, int low, int high)
+        {
+            // 1. True Median-of-Three pivot selection
+            int mid = low + (high - low) / 2;
+            SortThree(arr, low, mid, high);
+
+            // After SortThree, the middle element is a very safe pivot
+            T pivot = arr[mid];
+
+            int i = low - 1;
+            int j = high + 1;
+
+            while (true)
+            {
+                // Move i right as long as elements are smaller than pivot
+                do { i++; } while (arr[i].CompareTo(pivot) < 0);
+
+                // Move j left as long as elements are larger than pivot
+                do { j--; } while (arr[j].CompareTo(pivot) > 0);
+
+                // If pointers cross, the partition is complete
+                if (i >= j) return j;
+
+                swap(arr, i, j);
+            }
+        }
+
+        /// <summary>
+        /// Sorts the first, middle, and last elements.
+        /// This creates a pivot that resists "pathological" datasets.
+        /// </summary>
+        private static void SortThree(T[] arr, int a, int b, int c)
+        {
+            if (arr[a].CompareTo(arr[b]) > 0) swap(arr, a, b);
+            if (arr[a].CompareTo(arr[c]) > 0) swap(arr, a, c);
+            if (arr[b].CompareTo(arr[c]) > 0) swap(arr, b, c);
+        }
+
+        private static void swap(T[] arr, int i, int j)
         {
             T temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
         }
-
-        // The QuickSort function implementation
-        public static void quickSort(T[] arr, int low, int high, Clock clock)
-        {
-            while (low < high && !clock.IsElapsed())
-            {
-
-                // pi is the partition return index of pivot
-                int pi = partition(arr, low, high);
-
-                // recursion calls for smaller elements
-                // and greater or equals elements
-
-                //quickSort(arr, low, pi - 1, clock);
-                //quickSort(arr, pi + 1, high, clock);
-
-                if (pi - low < high - pi)
-                {
-                    quickSort(arr, low, pi - 1, clock);
-                    low = pi + 1; // Loop handles the right side
-                }
-                else
-                {
-                    quickSort(arr, pi + 1, high, clock);
-                    high = pi - 1; // Loop handles the left side
-                }
-            }
-        }
-
-        //static void Main(string[] args)
-        //{
-        //    int[] arr = { 10, 7, 8, 9, 1, 5 };
-        //    int n = arr.Length;
-
-        //    quickSort(arr, 0, n - 1);
-        //    foreach (int val in arr)
-        //    {
-        //        Console.Write(val + " ");
-        //    }
-        //}
     }
 }

@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static internal class Bubble_Sort<T> where T : IComparable<T>
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     public class Clock
     {

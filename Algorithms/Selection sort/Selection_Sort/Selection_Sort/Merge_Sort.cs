@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static internal class Merge_Sort<T> where T : IComparable<T>
     {
@@ -47,11 +47,6 @@ namespace Selection_Sort
                     arr[k] = L[i];
                     i++;
                 }
-                //if (L[i] <= R[j])
-                //{
-                //    arr[k] = L[i];
-                //    i++;
-                //}
                 else
                 {
                     arr[k] = R[j];

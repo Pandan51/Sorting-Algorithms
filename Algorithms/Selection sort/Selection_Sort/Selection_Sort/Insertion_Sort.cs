@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static internal class Insertion_Sort<T> where T : IComparable<T>
     {

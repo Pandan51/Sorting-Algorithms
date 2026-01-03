@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     static public class Selection_Sort<T> where T : IComparable<T>
     {

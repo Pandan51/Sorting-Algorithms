@@ -1,6 +1,6 @@
 ﻿using System.Timers;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     internal class Program
     {
@@ -11,7 +11,7 @@ namespace Selection_Sort
             //DataHandler<string> dataHandler = new DataHandler<string>();
 
             // Filename of dataset
-             string filename = "random_words_1M.txt";
+             string filename = "random_words_10M.txt";
             // string filename = "random_integers_10M.txt";
             // string filename = "number_10K.txt";
             // string filename = "number_200.txt";
@@ -40,6 +40,7 @@ namespace Selection_Sort
             //data = Heap_Sort<int>.SortSet(data, dataHandler, clock);
             //Merge_Sort<string>.mergeSort(data, 0, data.Length - 1);
             Quicksort_Sort<string>.quickSort(data, 0, data.Length - 1, clock);
+            //Radix_Sort<string>.Sort(data, clock);
 
 
 

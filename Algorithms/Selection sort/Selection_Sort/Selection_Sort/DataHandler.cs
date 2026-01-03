@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selection_Sort
+namespace Sorting_Algorithms
 {
     public class DataHandler<T> where T : IComparable<T>
     {
