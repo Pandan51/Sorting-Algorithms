@@ -11,25 +11,23 @@ namespace Selection_Sort
     {
         public static T[] SortSet(T[] data, DataHandler<T> valueHandler, Clock clock)
         {
-
+            // Repeat for each element
             for(int i = 0; i < data.Length-1 && !clock.IsElapsed(); i++)
             {
-                //bool notSwapped = true;
+                // Iterate through array
                 for(int swappedNumberIndex = 0; swappedNumberIndex < data.Length-1; swappedNumberIndex++)
                 {
+                    //If next value is smaller, swap them and continue
                     if(valueHandler.CompareValue(data[swappedNumberIndex+1],data[swappedNumberIndex]))
                     {
                         T temp = data[swappedNumberIndex];
                         data[swappedNumberIndex] = data[swappedNumberIndex+1];
                         data[swappedNumberIndex+1] = temp;
                     }
-                    //else
-                    //{
-                    //    notSwapped = false;
-                    //}
+                    
                     
                 }
-                clock.RepeatedShowTime();
+                //clock.RepeatedShowTime();
             }
             return data;
         }
