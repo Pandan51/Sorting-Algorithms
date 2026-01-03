@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Selection_Sort
 {
-    public class DataHandler<T>
+    public class DataHandler<T> where T : IComparable<T>
     {
         private T[] _data;
 
@@ -35,6 +36,14 @@ namespace Selection_Sort
             //    return _data;
             //}
             return _data ?? [];
+        }
+
+        public void SetData(T[] data)
+        {
+            if(data != null)
+            {
+                _data = data;
+            }
         }
 
         public void ParseData(string filename)
@@ -108,50 +117,66 @@ namespace Selection_Sort
             return result;
         }
 
-        public void CalculateAccuracy(string[] data)
+        public double CalculateAccuracy(T[]? data)
         {
+            
             if (data == null || data.Length <= 1)
             {
                 Console.WriteLine("Not enough data to calculate accuracy.");
-                return;
+                return -1;
             }
+            
 
             // Count if 2 elements are sorted correctly
             double correctSortPoints = 0;
             //Resulting accuracy in %
             double accuracy = 0;
 
-            if (data is string[])
+            
+
+            for (int index = 0; index < data.Length - 1; index++)
             {
-                // Check if sorted
-                for (int index = 0; index < data.Length - 1; index++)
+                //Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
+                if (CompareValue(_data[index], _data[index + 1]))
                 {
-                    Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
-                    if (this.WordIsBigger(data[index], data[index + 1]))
-                    {
-                        correctSortPoints++;
-                        //Console.WriteLine("Word is bigger");
-                    }
+                    correctSortPoints++;
                 }
             }
-            else if (data is double[])
-            {
-                // Check if sorted
-                for (int index = 0; index < data.Length - 1; index++)
-                {
-                    Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
-                    if (this.NumIsBigger(data[index], data[index + 1]))
-                    {
-                        correctSortPoints++;
-                        //Console.WriteLine("Word is bigger");
-                    }
-                }
-            }
+
+            //if (data is string[])
+            //{
+            //    // Check if sorted
+            //    for (int index = 0; index < data.Length - 1; index++)
+            //    {
+            //        Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
+            //        if (this.WordIsBigger(data[index], data[index + 1]))
+            //        {
+            //            correctSortPoints++;
+            //            //Console.WriteLine("Word is bigger");
+            //        }
+            //    }
+            //}
+            //else if (data is double[])
+            //{
+            //    // Check if sorted
+            //    for (int index = 0; index < data.Length - 1; index++)
+            //    {
+            //        Console.WriteLine(index + ": Comparing " + data[index] + "<" + data[index + 1]);
+            //        if (this.NumIsBigger(data[index], data[index + 1]))
+            //        {
+            //            correctSortPoints++;
+            //            //Console.WriteLine("Word is bigger");
+            //        }
+            //    }
+            //}
             //Console.WriteLine(correctSortPoints);
             //Console.WriteLine(data.Length);
-            accuracy = correctSortPoints / (data.Length-1);
-            Console.WriteLine($"Accuracy of this data set is {accuracy * 100} %\n" +
+            accuracy = Math.Round(correctSortPoints / (data.Length-1)*100,2);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Accuracy of this data set is {accuracy} %\n" +
                 $"{correctSortPoints}/{data.Length-1}  Sorted/All items");
+            Console.ForegroundColor = ConsoleColor.White;
+            return accuracy;
         }
 
         public bool WordIsBigger(string word1, string word2)
@@ -175,6 +200,24 @@ namespace Selection_Sort
                 return false;
             }
             
+        }
+        /// <summary>
+        /// Compares 2 values
+        /// If value1 is considered lower, return true, else false
+        /// </summary>
+        /// <param name="value1"></param>
+        /// <param name="value2"></param>
+        /// <returns></returns>
+        public bool CompareValue(T value1, T value2)
+        {
+            if(value1.CompareTo(value2) <= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool NumIsBigger(double num1, double num2)

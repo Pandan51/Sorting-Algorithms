@@ -61,5 +61,11 @@ namespace Selection_Sort
         {
             return timerElapsed;
         }
+        public void RepeatedShowTime()
+        {
+            Console.Clear();
+            this.ShowTime();
+            Console.WriteLine(this.IsElapsed());
+        }
     }
 }

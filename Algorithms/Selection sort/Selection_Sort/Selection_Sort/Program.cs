@@ -7,28 +7,36 @@ namespace Selection_Sort
         static void Main(string[] args)
         {
             // Type of handler
-            DataHandler<double> dataHandler = new DataHandler<double>();
+            DataHandler<string> dataHandler = new DataHandler<string>();
             //DataHandler<string> dataHandler = new DataHandler<string>();
 
             // Filename of dataset
-            string filename = "word_20.txt";
+            string filename = "random_words_10M.txt";
+            // string filename = "random_integers_10M.txt";
+            // string filename = "number_200.txt";
+            // string filename = "number_test.txt";
+
             // Parse Data
             dataHandler.ParseData(filename);
             // Timer - 1 hour
             // (Interval v ms, doba trvání sortování v ms)
-            Clock clock = new Clock(1000,10000);
-            Console.WriteLine(clock.GetTime());
+            Clock clock = new Clock(1000,1000*60*60);
+            //Console.WriteLine(clock.GetTime());
 
 
-            double[] data = dataHandler.GetData();
-            dataHandler.CalculateAccuracy(data);
+            string[] data = dataHandler.GetData();
+
+
+
+            double beforeSortAccuracy = dataHandler.CalculateAccuracy(data);
             Console.WriteLine("Press to start");
             Console.ReadKey();
             // Selection sort
             // Timer
             clock.StartClock();
 
-            data = Selection_Sort.SortWordSet(data, dataHandler, clock);
+            //data = Selection_Sort.Sort(data, dataHandler, clock);
+            data = Insertion_Sort<string>.SortSet(data, dataHandler, clock);
 
             //for (int swapIndex = 0; swapIndex < data.Length && !clock.IsElapsed(); swapIndex++)
             //{
@@ -56,7 +64,8 @@ namespace Selection_Sort
             Console.WriteLine("End of sorting");
             Console.WriteLine("\nTime:");
             clock.ShowTime();
-            dataHandler.CalculateAccuracy(data);
+            double afterSortAccuracy = dataHandler.CalculateAccuracy(data);
+            Console.WriteLine($"Results of sorting is {beforeSortAccuracy} % before sorting to {afterSortAccuracy} % after.");
             Console.WriteLine("Would you like to see the data? (yes)");
             string input = Console.ReadLine();
             if (input == "yes".ToLower())

@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\insertion_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\insertion_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\bubble_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\bubble_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +42,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Insertion_Sort.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Insertion_Sort.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\Insertion_Sort.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Insertion_Sort.cs",
+              "RelativeToolTip": "Selection_Sort\\Insertion_Sort.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:24:44.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Bubble_Sort.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Bubble_Sort.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\Bubble_Sort.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Bubble_Sort.cs",
+              "RelativeToolTip": "Selection_Sort\\Bubble_Sort.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAASwA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T20:47:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Selection_Sort.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Selection_Sort.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Selection_Sort.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Selection_Sort.cs",
               "RelativeToolTip": "Selection_Sort\\Selection_Sort.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-24T11:17:54.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Clock.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Clock.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
               "RelativeToolTip": "Selection_Sort\\Clock.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwBYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwD8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T12:44:56.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
+              "RelativeDocumentMoniker": "Selection_Sort\\DataHandler.cs",
+              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
+              "RelativeToolTip": "Selection_Sort\\DataHandler.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAADwv60AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:14:35.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,22 +112,9 @@
               "RelativeDocumentMoniker": "Selection_Sort\\Program.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs",
               "RelativeToolTip": "Selection_Sort\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T10:11:24.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataHandler.cs",
-              "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
-              "RelativeDocumentMoniker": "Selection_Sort\\DataHandler.cs",
-              "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
-              "RelativeToolTip": "Selection_Sort\\DataHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T10:14:35.759Z",
               "EditorCaption": ""
             }
           ]
