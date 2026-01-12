@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection sort\\selection_sort\\selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Clock.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Clock.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Clock.cs",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DataHandler.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\DataHandler.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\DataHandler.cs",
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "Selection_Sort\\Program.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection sort\\Selection_Sort\\Selection_Sort\\Program.cs",
               "RelativeToolTip": "Selection_Sort\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowCsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T10:11:24.234Z",
               "EditorCaption": ""
