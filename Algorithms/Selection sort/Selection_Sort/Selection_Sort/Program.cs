@@ -1,18 +1,20 @@
 ﻿using System.Timers;
-
+// Change to assign type to handlers and algorithms
+using DataType = System.Int32; // Change this to System.String when needed
 namespace Sorting_Algorithms
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             // Type of handler
-            DataHandler<string> dataHandler = new DataHandler<string>();
+            DataHandler<DataType> dataHandler = new DataHandler<DataType>();
             //DataHandler<string> dataHandler = new DataHandler<string>();
 
             // Filename of dataset
-             string filename = "random_words_10M.txt";
-            // string filename = "random_integers_10M.txt";
+            // string filename = "random_words_10M.txt";
+            string filename = "random_integers_10M.txt";
             // string filename = "number_10K.txt";
             // string filename = "number_200.txt";
             // string filename = "number_test.txt";
@@ -25,7 +27,7 @@ namespace Sorting_Algorithms
             //Console.WriteLine(clock.GetTime());
 
 
-            string[] data = dataHandler.GetData();
+            DataType[] data = dataHandler.GetData();
 
 
 
@@ -36,11 +38,14 @@ namespace Sorting_Algorithms
             // Timer
             clock.StartClock();
 
-            //data = Selection_Sort.Sort(data, dataHandler, clock);
-            //data = Heap_Sort<int>.SortSet(data, dataHandler, clock);
-            //Merge_Sort<string>.mergeSort(data, 0, data.Length - 1);
-            Quicksort_Sort<string>.quickSort(data, 0, data.Length - 1, clock);
-            //Radix_Sort<string>.Sort(data, clock);
+            // data = Selection_Sort<DataType>.SortSet(data, dataHandler, clock);
+            // data = Bubble_Sort<DataType>.SortSet(data, dataHandler, clock);
+            // data = Insertion_Sort<DataType>.SortSet(data, dataHandler, clock);
+            // data = Heap_Sort<DataType>.SortSet(data, dataHandler, clock);
+            // Merge_Sort<string>.mergeSort(data, 0, data.Length - 1);
+            // Quicksort_Sort<int>.quickSort(data, 0, data.Length - 1, clock);
+            // Radix_Sort<DataType>.Sort(data, clock);
+            
 
 
 
@@ -57,5 +62,7 @@ namespace Sorting_Algorithms
             }
 
         }
+
+
     }
 }

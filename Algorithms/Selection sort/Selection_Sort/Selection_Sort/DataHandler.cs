@@ -54,6 +54,7 @@ namespace Sorting_Algorithms
             string currentDir = Environment.CurrentDirectory;
             // Root of entire assignment
             string projectRoot = Directory.GetParent(currentDir).Parent.Parent.Parent.Parent.Parent.Parent.FullName;
+            // string projectRoot = Directory.GetParent(currentDir).Parent.Parent.Parent.Parent.Parent.Parent.FullName;
             // Directory name of data folder
             string dataDir = "Data";
             // Path to text file

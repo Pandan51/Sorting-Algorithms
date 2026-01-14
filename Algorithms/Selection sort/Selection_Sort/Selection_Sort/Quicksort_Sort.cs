@@ -76,6 +76,7 @@ namespace Sorting_Algorithms
         /// Sorts the first, middle, and last elements.
         /// This creates a pivot that resists "pathological" datasets.
         /// </summary>
+        /// 
         private static void SortThree(T[] arr, int a, int b, int c)
         {
             if (arr[a].CompareTo(arr[b]) > 0) swap(arr, a, b);
