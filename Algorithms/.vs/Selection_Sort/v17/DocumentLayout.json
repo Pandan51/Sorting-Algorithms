@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection_sort\\quicksort_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\quicksort_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,6 +18,13 @@
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\merge_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
       "AbsoluteMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|c:\\\u0161kola\\3. ro\u010Dn\u00EDk\\al\\algoritmy\\algorithms\\selection_sort\\radix_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378A7403-5E8E-41EC-9517-10E002134B8A}|Selection_Sort\\Selection_Sort.csproj|solutionrelative:selection_sort\\radix_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,7 +56,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,11 +76,20 @@
               "RelativeToolTip": "Selection_Sort\\Radix_Sort.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-03T19:00:00.767Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+              "WhenOpened": "2026-01-03T19:00:00.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
               "Title": "Quicksort_Sort.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Quicksort_Sort.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Quicksort_Sort.cs",
@@ -74,11 +97,20 @@
               "RelativeToolTip": "Selection_Sort\\Quicksort_Sort.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-03T17:51:28.331Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "WhenOpened": "2026-01-03T17:51:28.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
               "Title": "Merge_Sort.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Merge_Sort.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Merge_Sort.cs",
@@ -86,7 +118,12 @@
               "RelativeToolTip": "Selection_Sort\\Merge_Sort.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-03T17:09:37.677Z"
+=======
+              "WhenOpened": "2026-01-03T17:09:37.677Z",
+              "EditorCaption": ""
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             },
             {
               "$type": "Document",
@@ -98,7 +135,12 @@
               "RelativeToolTip": "Selection_Sort\\Heap_Sort.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAA1wFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-03T12:26:05.547Z"
+=======
+              "WhenOpened": "2026-01-03T12:26:05.547Z",
+              "EditorCaption": ""
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             },
             {
               "$type": "Document",
@@ -110,7 +152,12 @@
               "RelativeToolTip": "Selection_Sort\\Insertion_Sort.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-14T14:07:28.198Z"
+=======
+              "WhenOpened": "2026-01-14T14:07:28.198Z",
+              "EditorCaption": ""
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             },
             {
               "$type": "Document",
@@ -122,7 +169,12 @@
               "RelativeToolTip": "Selection_Sort\\Bubble_Sort.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-14T14:07:21.738Z"
+=======
+              "WhenOpened": "2026-01-14T14:07:21.738Z",
+              "EditorCaption": ""
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             },
             {
               "$type": "Document",
@@ -134,7 +186,12 @@
               "RelativeToolTip": "Selection_Sort\\Selection_Sort.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-14T14:07:11.948Z"
+=======
+              "WhenOpened": "2026-01-14T14:07:11.948Z",
+              "EditorCaption": ""
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             },
             {
               "$type": "Document",
@@ -146,17 +203,30 @@
               "RelativeToolTip": "Selection_Sort\\DataHandler.cs",
               "ViewState": "AgIAALsAAAAAAAAAAAAwwAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-01-14T18:11:38.793Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+=======
+              "WhenOpened": "2026-01-14T18:11:38.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Program.cs",
               "RelativeDocumentMoniker": "Selection_Sort\\Program.cs",
               "ToolTip": "C:\\\u0160kola\\3. Ro\u010Dn\u00EDk\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Program.cs",
               "RelativeToolTip": "Selection_Sort\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAABwAAAAAAAAAAAAQwDIAAAAMAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDMAAAA5AAAAAAAAAA==",
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T10:11:24.234Z",
               "EditorCaption": ""

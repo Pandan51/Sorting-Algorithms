@@ -4,6 +4,7 @@
   "success": true,
   "projectFilePath": "C:\\Škola\\3. Ročník\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Selection_Sort.csproj",
   "expectedPackageFiles": [],
+<<<<<<< HEAD
   "logs": [
     {
       "code": "Undefined",
@@ -15,4 +16,7 @@
       "targetGraphs": []
     }
   ]
+=======
+  "logs": []
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
 }

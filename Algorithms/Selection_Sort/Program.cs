@@ -48,7 +48,11 @@ namespace Sorting_Algorithms
             // data = Insertion_Sort<DataType>.SortSet(data, dataHandler, clock);
             // data = Heap_Sort<DataType>.SortSet(data, dataHandler, clock);
             // Merge_Sort<DataType>.SortSet(data, 0, data.Length - 1);
+<<<<<<< HEAD
              Quicksort_Sort<DataType>.SortSet(data, 0, data.Length - 1, clock);
+=======
+            // Quicksort_Sort<DataType>.SortSet(data, 0, data.Length - 1, clock);
+>>>>>>> 59e23f2222e75881043769bc915a3b73739b6a89
             // Radix_Sort<DataType>.SortSet(data, clock);
             
 
