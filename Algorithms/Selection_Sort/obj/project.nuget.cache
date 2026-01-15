@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "rRCB+e4a0XY=",
+  "success": true,
+  "projectFilePath": "C:\\Škola\\3. Ročník\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Selection_Sort.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Škola\\3. Ročník\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Škola\\3. Ročník\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Selection_Sort.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Škola\\3. Ročník\\Al\\Algoritmy\\Algorithms\\Selection_Sort\\Selection_Sort.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
